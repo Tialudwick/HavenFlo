@@ -1,14 +1,27 @@
 /* global definition in aesthetics, typography, responsive layout, stuctures, and cross site UI */
 :root {
-    --bg-primary: #f8f9fa;
-    --card-bg: #ffffff;
-    --text-main: #212529;
-    --text-muted: #6c757d;
-    --accent-green: #2e7d32;
-    --alert-amber: #f57c00;
-    --alert-red: #c62828;
-    --border-color: #dee2e6;
+    /* Backgrounds & Canvas (No Stark Whites) */
+    --bg-primary: #EBF1F5;      /* Calming, ultra-soft blue-tinted slate canvas */
+    --card-bg: #F4F7F4;         /* Soft, organic linen-tinted cream for bed tracking cards */
+    
+    /* Typography */
+    --text-main: #2A3644;       /* Deep slate-charcoal for high-contrast, comfortable reading */
+    --text-muted: #5C6E82;      /* Muted slate-gray for secondary labels and timestamps */
+    
+    /* Brand Accents */
+    --accent-teal: #237683;     /* Deepened Haven Teal for primary actions (passes contrast on linen cards) */
+    --accent-blue: #162E6D;     /* Deep Stability Blue for headers and anchoring structural UI elements */
+    
+    /* System & Bed Statuses */
+    --accent-green: #15803D;    /* Earthy, deep Renewal Green for available beds and success metrics */
+    --alert-amber: #B45309;     /* Warm Amber-ochre for pending intakes or holds (non-anxious tone) */
+    --alert-red: #B91C1C;       /* Brick Red for critical alerts (noticeable, but not stark or alarming) */
+    
+    /* Layout Borders */
+    --border-color: #D3E0EA;    /* Muted fog gray to separate cards without creating sharp lines */
 }
+
+
 
 body {
     margin: 0;
