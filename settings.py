@@ -1,0 +1,1 @@
+# this code configures database connections, security key, and registers custom dashboard applications

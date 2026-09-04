@@ -1,0 +1,21 @@
+<!-- resuable wrapper file containing the global navigation sidebar, security metadata, headers, structural grid wrappers -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenFlo - Enterprise Residential Tracking</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav class="app-navbar">
+        <div class="brand">HavenFlo 🌿</div>
+        <div class="nav-links">
+            <a href="{% url 'global_dashboard' %}">Multi-Site Overview</a>
+        </div>
+    </nav>
+    <main class="main-container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- renders global multi-site overview screen displaying aggregate occupancy metrics for all houses-->
+ {% extends 'base.html' %}
+{% block content %}
+<h1 class="page-title">Global Property Census</h1>
+<div class="dashboard-grid">
+    {% for data in dashboard_data %}
+    <div class="property-card">
+        <h2>{{ data.property.name }}</h2>
+        <p class="address">{{ data.property.address }}</p>
+        
+        <div class="metric-row">
+            <span class="label">Occupancy:</span>
+            <span class="value">{{ data.occupancy_rate }}%</span>
+        </div>
+        
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="width: {{ data.occupancy_rate }}%"></div>
+        </div>
+
+        <div class="bed-breakdown">
+            <div class="bed-pill occupied">Filled: {{ data.occupied }}</div>
+            <div class="bed-pill vacant">Open: {{ data.vacant }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
